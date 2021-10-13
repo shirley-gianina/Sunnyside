@@ -1,0 +1,528 @@
+:root {
+  --Soft-red: hsl(7, 99%, 70%);
+  --Yellow: hsl(51, 100%, 49%);
+
+  /* (graphic design text) */
+  --Dark-desaturated-cyan: hsl(167, 40%, 24%);
+
+  /* (photography text) */
+  --Dark-blue: hsl(198, 62%, 26%);
+
+  /* (footer) */
+  --Dark-moderate-cyan: hsl(167, 44%, 70%, 1);
+  --Dark-text-cyan: hsl(168, 34%, 41%);
+
+  /* neutral */
+  --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --Dark-grayish-blue: hsl(232, 10%, 55%);
+  --Grayish-blue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --black: hsl(100%, 0%, 0%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.d-lg-block {
+  display: block;
+}
+
+.d-lg-none {
+  display: none;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Fraunces", serif;
+  font-size: 18px;
+}
+
+header {
+  background-image: url("../images/desktop/image-header.jpg");
+  background-size: cover;
+  height: 970px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: "Fraunces", serif;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+header .navbar img {
+  width: 200px;
+}
+
+header .title h1 {
+  color: var(--White);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 8px;
+  margin-top: 125px;
+  font-size: 70px;
+}
+
+header .arrow {
+  text-align: center;
+  margin-top: 120px;
+}
+
+section .gallery .row {
+  width: 100%;
+  display: flex;
+}
+
+section .gallery .row > div {
+  width: 50%;
+}
+
+section .gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+section .gallery .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .gallery .info > div {
+  max-width: 400px;
+}
+
+section .gallery .info h2 {
+  font-size: 40px;
+  margin: 40px 0px;
+  line-height: 35px;
+}
+
+section .gallery .info p {
+  color: var(--Very-dark-grayish-blue);
+  font-size: 20px;
+  margin: 40px 0px;
+  line-height: 35px;
+}
+
+section .gallery .info span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+section .gallery .info .border-yellow {
+  border-bottom-style: solid;
+  border-bottom-width: 10px;
+  border-color: var(--Yellow);
+}
+
+section .gallery .info .border-red {
+  border-bottom-style: solid;
+  border-bottom-width: 10px;
+  border-color: var(--Soft-red);
+}
+
+section .gallery .info-right {
+  width: 100%;
+  /* height: 760px; */
+  background-image: url("../images/desktop/image-graphic-design.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+section .gallery .info-right > div {
+  text-align: center;
+  width: 100%;
+  margin-top: 630px;
+}
+
+section .gallery .info-right h3 {
+  color: var(--Dark-desaturated-cyan);
+  margin-bottom: 30px;
+  width: 100%;
+  font-size: 25px;
+  letter-spacing: 0;
+
+}
+
+section .gallery .info-right p {
+  font-size: 20px;
+  color: var(--Dark-desaturated-cyan);
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 68px;
+  line-height: 30px;
+}
+
+section .gallery .info-left {
+  display: flex;
+  width: 100%;
+  /* height: 760px; */
+  background-image: url("../images/desktop/image-photography.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+section .gallery .info-left > div {
+  text-align: center;
+  width: 100%;
+  margin-top: 630px;
+}
+
+section .gallery .info-left h3 {
+  color: var(--Dark-blue);
+  margin-bottom: 30px;
+  width: 100%;
+  font-size: 25px;
+  letter-spacing: 0;
+}
+
+section .gallery .info-left p {
+  font-size: 20px;
+  color: var(--Dark-blue);
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 68px;
+  line-height: 30px;
+}
+
+section h3 {
+  color: var(--Grayish-blue);
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 70px;
+  letter-spacing: 0.25em;
+  word-spacing: 0.25em;
+}
+
+section.users-testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 800px;
+}
+
+section.users-testimonials > div {
+  text-align: center;
+  max-width: 60%;
+}
+
+section.users-testimonials .users {
+  display: flex;
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+section.users-testimonials .users img {
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+
+section.users-testimonials .users p {
+  color: var(--Very-dark-grayish-blue);
+  margin-bottom: 60px;
+  line-height: 35px;
+  font-size: 18px;
+}
+
+section.users-testimonials .users h5 {
+  color: var(--black);
+  margin-top: 40px;
+  line-height: 32px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+section.users-testimonials .users span {
+  color: var(--Grayish-blue);
+  font-size: 15px;
+}
+
+section .gallery-bottom {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+section .gallery-bottom img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 100px;
+  height: 180px;
+  background: var(--Dark-moderate-cyan);
+}
+
+footer .logo img {
+  filter: invert(1) opacity(0.4);
+  width: 200px;
+  margin-bottom: 25px;
+}
+
+footer .links ul {
+  display: flex;
+  justify-content: center;
+  font-family: "Barlow", sans-serif;
+}
+
+footer .links ul li {
+  margin: 0 20px;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+footer .links ul li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--Dark-text-cyan);
+}
+
+footer .social-links ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer .social-links ul li {
+  margin: 0 15px;
+  list-style: none;
+  margin-top: 70px;
+}
+
+footer .social-links ul li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--Dark-text-cyan);
+}
+
+
+@media screen and (min-width: 470px) {
+  .hide-lg {
+    display: none;
+  }
+
+  header .navbar .links ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+  }
+
+  header .navbar .links ul li {
+    padding-left: 25px;
+  }
+
+  header .navbar .links ul li a {
+    text-decoration: none;
+    color: var(--White);
+    font-size: 20px;
+  }
+
+  header .navbar .links li:last-child {
+    border-radius: 20px;
+    background-color: var(--White);
+    margin-left: 15px;
+    padding: 10px 20px;
+  }
+
+  header .navbar .links li:last-child a {
+    color: var(--black);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (max-width: 470px) {
+  .hide-sm {
+    display: none;
+  }
+
+  header {
+    height: 700px;
+    background-image: url("../images/mobile/image-header.jpg");
+  }
+
+  header .navbar img {
+    width: 180px;
+  }
+
+  header .navbar .menu img {
+    width: 25px;
+    height: 25px;
+  }
+
+  header .navbar .links {
+    background: var(--White);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 30%;
+    bottom: 0;
+    z-index: 9;
+  }
+
+  header .navbar .links p {
+    text-align: right;
+    margin: 20px;
+    font-weight: bold;
+  }
+
+  header .navbar .links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header .navbar .links ul li {
+    padding-left: 25px;
+  }
+  
+  header .navbar .links ul li a {
+    text-decoration: none;
+    color: var(--);
+    font-size: 20px;
+  }
+
+  header .title h1 {
+    letter-spacing: 8px;
+    margin-top: 55px;
+    font-size: 40px;
+  }
+
+  header .arrow {
+    margin-top: 90px;
+  }
+
+  header .arrow img {
+    width: 50px;
+  }
+
+  section .gallery .row {
+    flex-direction: column;
+  }
+
+  section .gallery .row:nth-child(1) {
+    flex-direction: column-reverse;
+  }
+
+  section .gallery .row > div {
+    width: 100%;
+  }
+  section .gallery .row .info {
+    text-align: center;
+    padding: 65px 0px;
+  }
+
+  section .gallery .row .info h2 {
+    font-size: 35px;
+    margin: 25px 0px;
+  }
+
+  section .gallery .row .info p {
+    font-size: 20px;
+    margin: 30px;
+    line-height: 30px;
+    word-spacing: 0.1em;
+  }
+
+  section .gallery .info-right {
+    background-image: url("../images/mobile/image-graphic-design.jpg");
+    background-size: contain;
+    height: 640px;
+  }
+
+  section .gallery .info-right > div {
+    margin-top: 400px;
+}
+
+  section .gallery .info-right h3 {
+    font-size: 35px;
+    margin-bottom: 40px;
+    letter-spacing: 0;
+  }
+
+  section .gallery .info-right p {
+    padding: 0px 20px;
+    font-size: 20px;
+
+  }
+
+
+  section .gallery .info-left {
+    background-image: url("../images/mobile/image-photography.jpg");
+    background-size: contain;
+    height: 640px;
+  }
+
+  section .gallery .info-left > div {
+    margin-top: 400px;
+}
+
+  section .gallery .info-left h3 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    letter-spacing: 0;
+
+  }
+
+  section .gallery .info-left p {
+    padding: 0px 20px;
+    margin-top: -9px;
+  }
+
+
+  section .gallery-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  section.users-testimonials {
+    text-align: center;
+    padding: 60px 15px;
+  }
+
+  section.users-testimonials .users {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  section.users-testimonials .users h5 {
+    margin-top: 30px;
+    line-height: 32px;
+    font-size: 20px;
+  }
+
+  section.users-testimonials .users p {
+    margin-bottom: 10px;
+    line-height: auto;
+    font-size: 20px;
+  }
+
+  section.users-testimonials .users img {
+    margin-top: 60px;
+  }
+
+  section.users-testimonials .users > div:first-child img {
+    margin-top: 0px;
+  }
+
+  footer .logo img {
+    width: 200px;
+  }
+}
